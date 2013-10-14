@@ -20,9 +20,14 @@
    <center>
     <a href="Nuevo.php">
     <button>
-     <img src="nuevo.jpg" width="500" height="500"/>
+     <img src="nuevo.jpg" width="500" height="350"/>
     </button>
     </a>
+	<a href="Mostrar.php">
+	 <button>
+	  <image src="Mostrar.jpg" width="500" height="350">
+	 </button>
+	</a>
    </center>
  </body>
 </html>

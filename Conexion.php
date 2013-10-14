@@ -7,7 +7,7 @@ class Conexion
 {
  function Abrir()
  {
-  if($conexion)
+  if( $conexion = mysql_connect('localhost','root'))
   {
    echo "Error";
   //exit();
@@ -15,23 +15,26 @@ class Conexion
   else
   {
    mysql_select_db("programacion",$conexion);
-   $query = "SELECT * FROM contacto";
-   $resultado = mysql_result(mysql_query($query,$conexion),1,1);
-   echo $resultado;
-   mysql_close($conexion);
   }
  }
  
- function Ver()
+ function VerTodos()
  {
-   $query="SE";
+   $query="SELECT * FORM contacto;";
+   ResultadoQuery($query);
+ }
+ 
+ function ResultadoQuery()
+ {
+  $resultado = mysql_result($query);
+  echo $resultado;
  }
  
  function Cerrar()
  {
-  mysql_close($conexion);
+   mysql_close($conexion);
  }
 }
-
+header('Loader:Directorio.php');
 ?>
 </html>

@@ -5,7 +5,7 @@
  </head>
  
  <body>
-  <form method="POST" action="Mostrar.php">
+  <form method="POST" action="Conexion.php">
    <h1>Ingresar datos:</h1>
    <?php
     $Arreglo = array("Nombre","Telefono","Celular","Direccion","Colonia","CP");

@@ -6,12 +6,9 @@
  
  <body>
   <?php
-  	 include("InicioSesion.php");
-	 $Advertir = new Inicio();
-	 
      $codigo = $_POST['txtCodigo'];
      $contrasenia = $_POST['txtContrasenia'];
-	  
+	 
     if(trim($codigo)!= null and trim($contrasenia)!= null)
     {
      if(($codigo=="100" && $contrasenia=="udg")||($codigo=="110" && $contrasenia="tonala")||($codigo=="1" && $contrasenia=="root"))
@@ -27,15 +24,13 @@
   	 }
 	 else
 	 {
-	  echo "<h4>Datos Incorrectos</h4>";
-	  $Advertir->$Mensaje();//"VERIFIQUE SUS DATOS"
+	  echo "<h4>Datos Incorrectos</h4>";  
 	  header('Location:InicioSesion.php');
 	 }
     }
     else
     {
       echo "<h4>Favor de llenar los espacios</h4>";
-	  $Advertir->$Mensaje();//"LLENE LOS ESPACIOS CORRESPONDIENTES"
 	  header('Location:InicioSesion.php');
     }
   ?>

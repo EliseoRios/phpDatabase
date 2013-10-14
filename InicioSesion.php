@@ -17,14 +17,5 @@
    </br>
    <input type="submit" name="entrar" value="Entrar"/>
   </form>
-  <?php
-    class Inicio
-	{
-	 function Mensaje()
-	 {
-	   echo "<p>"."hola"."</p>";
-	 }
-	}
-  ?>
  </body>
 <html>
