@@ -1,5 +1,5 @@
 <html>
-<?php
+<?php  
  class conexion
  {
   function recuperarDatos()
@@ -24,6 +24,17 @@
 	 echo "</tr>";
 	}
 	echo "</table>";
+  }
+  
+  function Insertar($Nombre,$Telefono,$Celular,$Direccion,$Colonia,$CP)
+  {
+	$con = mysql_connect('localhost','root','') or die ("NO CONECTO BASE DE DATOS"); 
+    mysql_select_db('programacion',$con);
+   
+   	$query="INSERT INTO contacto(Nombre,Telefono,Celular,Direccion,Colonia,CP) VALUES ('".$Nombre."','".$Telefono."','".$Celular."','".$Direccion."','".$Colonia."','".$CP."');";
+	var_dump($query);
+	mysql_query($query) or die ("ERROR en el query ".$query);
+	echo "<p>GUARDADO CON EXITO</p>";
   }
  }
 ?>

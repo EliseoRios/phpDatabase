@@ -5,7 +5,7 @@
  </head>
  
  <body>
-  <form method="POST" action="Conexion.php">
+  <form method="POST" action="Guardar.php">
    <h1>Ingresar datos:</h1>
    <?php
     $Arreglo = array("Nombre","Telefono","Celular","Direccion","Colonia","CP");
@@ -16,7 +16,7 @@
 	 echo "<input type='text' name='txt".$Arreglo[$i]."'/></br>";
 	}
    ?>
-   <input type="submit" name="entrar" value="Entrar"/>
+    <input type="submit" name="entrar" value="Entrar"/>
   </form>
  </body>
 <html>
