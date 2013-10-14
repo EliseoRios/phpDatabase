@@ -7,7 +7,7 @@
  <body>
   <div>
    <fieldset>
-   <legend>Datos recuperados</legend>
+   <legend>Datos Almacenados</legend>
     <div>
      <?php
 	  include("PrurebaBase.php");
