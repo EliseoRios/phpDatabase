@@ -35,6 +35,9 @@
 	var_dump($query);
 	mysql_query($query) or die ("ERROR en el query ".$query);
 	echo "<p>GUARDADO CON EXITO</p>";
+	
+   echo "<a href='Mostrar.php'>Mostrar datos</a></br>";
+   echo "<a href='Nuevo.php'>Regresar</a>";
   }
  }
 ?>

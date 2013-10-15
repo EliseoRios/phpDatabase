@@ -16,7 +16,14 @@
 	 echo "<input type='text' name='txt".$Arreglo[$i]."'/></br>";
 	}
    ?>
-    <input type="submit" name="entrar" value="Entrar"/>
+   
+   <input type="submit" name="entrar" value="Guardar"/>
+   
+   </br>
+    <a href="Mostrar.php">
+     Mostrar datos
+	</a>
+	
   </form>
  </body>
 <html>
